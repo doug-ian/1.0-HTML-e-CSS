@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contato - Barbearia Moustache</title>
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style-contato.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+		<header>
+			<div class="caixa">
+				<h1><img src="logo.png" alt="Logo da Barbearia Alura"></h1>
+				<nav>
+					<ul>
+						<li><a href="1.index.html">Home</a></li>
+						<li><a href="2.produtos.html">Produtos</a></li>
+						<li><a href="3.contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+        
+        <main>
+			<form>
+				<label for="nomeesobrenome">Nome e sobrenome: </label> 
+				<input type="text" id="nomeesobrenome" class="input-padrao" required>
+
+				<label for="email">E-mail: </label>
+				<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+				<label for="telefone">Telefone: </label>
+				<input type="tel" id="telefone" class="input-padrao" required placeholder="+55 (XX) XXXXX - XXXX">
+				
+				<label for="mensagem">Mensagem:</label>
+				<textarea cols="70" rows="10" id="mensagem"  class="input-padrao" required></textarea>
+
+				<fieldset>
+					<legend>Como prefere nosso contato?</legend> 
+					<label for="radio-email"><input type="radio" name="contato"  value="email" id="radio-email" class="contato1">E-mail</label>
+					<label for="radio-tel"><input type="radio" name="contato" value="telefone" id="radio-tel" class="contato1">Telefone</label>
+					<label for="radio-whats"><input type="radio" name="contato" value="whatsapp" id="radio-whats" checked class="contato1">Whatsapp</label>
+				</fieldset>
+
+				<fieldset>
+					<legend class="horario">Qual horário gostia de ser atendido?</legend>
+					<select class="opção">
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+				</fieldset>
+
+				<label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossa atividades por e-mail?</label>
+
+				<input type="submit" value="Enviar" class="enviar">
+			</form>
+
+			<table>
+				<thead>
+					<tr> 
+						<th>Dia</th>
+						<th>Horário</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr> 
+						<td>Dia</td>
+						<td>Horário</td>
+					</tr>
+					<tr> 
+						<td>Segunda-feira</td>
+						<td>08h - 20h</td>
+					</tr>
+					<tr> 
+						<td>Quarta-feira</td>
+						<td>08h - 20h</td>
+					</tr>
+					<tr> 
+						<td>Sexta-feira</td>
+						<td>08h - 20h</td>
+					</tr>
+				</tbody>
+			</table>
+        </main>
+
+        <footer>
+			<img src="logo-branco.png" alt="Logo da Barbearia Alura">
+			<p class="copyright">&copy; Copyright Barbearia Moustache - 2019</p>
+		</footer>
+	</body> 
+</html>
